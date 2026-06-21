@@ -3,14 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Do Thanh Portfolio</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
+
 body{
     font-family:'Montserrat',sans-serif;
     background:#ececec;
@@ -19,6 +24,7 @@ body{
     justify-content:center;
     padding:30px 15px;
 }
+
 .container{
     width:100%;
     max-width:900px;
@@ -26,16 +32,19 @@ body{
     overflow:hidden;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
+
 .cover{
     width:100%;
     height:320px;
     overflow:hidden;
 }
+
 .cover img{
     width:100%;
     height:100%;
     object-fit:cover;
 }
+
 .avatar{
     width:180px;
     height:180px;
@@ -44,21 +53,25 @@ body{
     margin:-90px auto 0;
     border:8px solid #f8f7f4;
 }
+
 .avatar img{
     width:100%;
     height:100%;
     object-fit:cover;
 }
+
 .content{
     padding:20px 30px 70px;
     text-align:center;
 }
+
 .name{
     font-size:60px;
     font-weight:300;
     letter-spacing:5px;
     margin-top:25px;
 }
+
 .job{
     font-size:18px;
     font-weight:500;
@@ -66,10 +79,12 @@ body{
     margin-top:12px;
     margin-bottom:45px;
 }
+
 .menu{
     max-width:450px;
     margin:auto;
 }
+
 .menu a{
     display:block;
     text-decoration:none;
@@ -81,125 +96,171 @@ body{
     letter-spacing:2px;
     transition:.3s;
 }
+
 .menu a:hover{
     background:#111;
     color:white;
 }
+
 .contact-title{
     margin-top:60px;
     font-size:24px;
     letter-spacing:3px;
 }
+
 .socials{
     margin-top:25px;
     display:flex;
     justify-content:center;
-    gap:30px;
+    gap:50px;
 }
+
 .socials a{
     text-decoration:none;
     color:#111;
     font-size:28px;
     transition:.3s;
 }
+
 .socials a:hover{
     transform:translateY(-3px);
 }
+
 .footer{
     margin-top:50px;
     color:#666;
     font-size:12px;
     letter-spacing:2px;
 }
+
 @media(max-width:768px){
+
     .cover{
         height:220px;
     }
+
     .avatar{
         width:130px;
         height:130px;
         margin-top:-65px;
     }
+
     .name{
         font-size:34px;
         letter-spacing:3px;
     }
+
     .job{
         font-size:14px;
     }
+
     .menu a{
         font-size:15px;
         padding:15px;
     }
+
     .contact-title{
         font-size:18px;
     }
 }
+
 </style>
 </head>
+
 <body>
+
 <div class="container">
+
     <!-- COVER -->
     <div class="cover">
         <img id="coverImage" src="" alt="Cover">
     </div>
+
     <!-- AVATAR -->
     <div class="avatar">
         <img id="avatarImage" src="" alt="Avatar">
     </div>
+
     <div class="content">
+
         <h1 class="name" id="userName"></h1>
+
         <div class="job" id="userJob"></div>
+
         <!-- MENU -->
         <div class="menu" id="menuContainer"></div>
+
         <div class="contact-title">
             CONTACT ME
         </div>
+
         <div class="socials">
+
             <a id="emailLink" href="#">
                 ✉
             </a>
-            <a id="socialLink" href="#" target="_blank">
-                🌐
-            </a>
+
             <a id="phoneLink" href="#">
                 ☎
             </a>
+
         </div>
+
         <div class="footer">
             © 2026 DO THANH. ALL RIGHTS RESERVED.
         </div>
+
     </div>
+
 </div>
+
 <script>
+
 fetch('data.json')
+
 .then(res => res.json())
+
 .then(data => {
+
 document.getElementById('userName').innerText =
 data.name;
+
 document.getElementById('userJob').innerText =
 data.job;
+
 document.getElementById('avatarImage').src =
 data.avatar;
+
 document.getElementById('coverImage').src =
 data.cover;
+
 const menu =
 document.getElementById('menuContainer');
+
 data.buttons.forEach(btn => {
+
 const a =
 document.createElement('a');
+
 a.href = btn.url;
+
 a.innerText = btn.text;
+
 a.target = "_blank";
+
 menu.appendChild(a);
+
 });
+
 document.getElementById('emailLink').href =
 data.email;
-document.getElementById('socialLink').href =
-data.social;
+
 document.getElementById('phoneLink').href =
 data.phone;
+
 });
+
 </script>
+
 </body>
 </html>
