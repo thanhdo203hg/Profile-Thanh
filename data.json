@@ -1,0 +1,30 @@
+{
+  "name": "DO THANH",
+  "job": "GRAPHIC DESIGNER",
+
+  "avatar": "avatar.jpg",
+
+  "cover": "cover.jpg",
+
+  "buttons": [
+    {
+      "text": "TIKTOK",
+      "url": "https://tiktok.com"
+    },
+
+    {
+      "text": "LOCKET",
+      "url": "https://locket.camera"
+    },
+
+    {
+      "text": "FACEBOOK",
+      "url": "https://facebook.com"
+    },
+
+    {
+      "text": "CONTACT",
+      "url": "mailto:yourmail@gmail.com"
+    }
+  ]
+}
