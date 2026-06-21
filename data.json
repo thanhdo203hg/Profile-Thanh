@@ -1,30 +1,27 @@
 {
   "name": "DO THANH",
   "job": "GRAPHIC DESIGNER",
-
   "avatar": "avatar.jpg",
-
   "cover": "cover.jpg",
-
+  "email": "mailto:yourmail@gmail.com",
+  "social": "https://facebook.com",
+  "phone": "tel:0123456789",
   "buttons": [
     {
       "text": "TIKTOK",
       "url": "https://tiktok.com"
     },
-
     {
       "text": "LOCKET",
       "url": "https://locket.camera"
     },
-
+    {
+      "text": "INSTAGRAM",
+      "url": "https://instagram.com"
+    },
     {
       "text": "FACEBOOK",
       "url": "https://facebook.com"
-    },
-
-    {
-      "text": "CONTACT",
-      "url": "mailto:yourmail@gmail.com"
     }
   ]
 }
