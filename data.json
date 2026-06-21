@@ -1,27 +1,27 @@
 {
-  "name": "DO THANH",
-  "job": "GRAPHIC DESIGNER",
+  "name": "Thanh Đỗ",
+  "job": "FreeLance",
   "avatar": "avatar.jpg",
   "cover": "cover.jpg",
-  "email": "mailto:yourmail@gmail.com",
-  "social": "https://facebook.com",
-  "phone": "tel:0123456789",
+  "email": "mailto:thanhdt203.dessigner@gmail.com",
+  "social": "https://www.facebook.com",
+  "phone": "tel:0799775459",
   "buttons": [
     {
       "text": "TIKTOK",
-      "url": "https://tiktok.com"
+      "url": "https://www.tiktok.com/@dothanhk3?_r=1&_t=ZS-97OK6F6clts"
     },
     {
       "text": "LOCKET",
-      "url": "https://locket.camera"
+      "url": "https://locket.cam/dtthanh03"
     },
     {
       "text": "INSTAGRAM",
-      "url": "https://instagram.com"
+      "url": "https://www.instagram.com/dongianlathanh?igsh=dXpnaTR2bTRiNDkz&utm_source=qr"
     },
     {
       "text": "FACEBOOK",
-      "url": "https://facebook.com"
+      "url": "https://www.facebook.com/share/1E1hb7dtVM/?mibextid=wwXIfr"
     }
   ]
 }
